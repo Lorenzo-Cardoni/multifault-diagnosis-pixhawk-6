@@ -15,20 +15,20 @@ z_des = FC_states.Data(:,9);
 % yaw = FC_states.Data(:,10);
 % pitch = FC_states.Data(:,11);
 % roll = FC_states.Data(:,12);
-% 
+
 % yawspeed = FC_states.Data(:,13);
 % pitchspeed = FC_states.Data(:,14);
 % rollspeed = FC_states.Data(:,15);
-% 
+ 
 % yaw_des = FC_states.Data(:,16);
 % pitch_des = FC_states.Data(:,17);
 % roll_des = FC_states.Data(:,18);
-% 
+ 
 % dt = FC_states.Time(1:end-1);
 % % Accellerazioni lineari
-% 
+ 
 % dataArray = out.dynamics_states.Data;
-% 
+ 
 % ax = squeeze(dataArray(:,15,:));
 % ay = squeeze(dataArray(:,16,:));
 % az = squeeze(dataArray(:,17,:));
@@ -55,8 +55,8 @@ z_des = FC_states.Data(:,9);
 
 %disp(out.dynamics_states.signals.values(:,17,:));
 
-prova_log = 'prova_volo9.mat';
-save(prova_log, "out" ,'FC_states');
+prova_log = 'states_WF_presentazione.mat';
+save(prova_log, "out" ,'FC_states', 'acc', 'label', 'label1');
 % save(prova_log, "out" ,'FC_states','x_stim','y_stim','z_stim', 'vx','vy','vz', ...
 %     'x_des',"y_des",'z_des', "yaw", 'pitch', "roll", "yawspeed", ...
 %     "pitchspeed", "rollspeed", "yaw_des", "pitch_des", "roll_des", ...

@@ -7,9 +7,9 @@
 //
 // Code generated for Simulink model 'Quadcopter_ControllerWithNavigation'.
 //
-// Model version                  : 4.12
+// Model version                  : 4.31
 // Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
-// C/C++ source code generated on : Fri Dec 13 15:25:49 2024
+// C/C++ source code generated on : Wed Feb  5 16:24:46 2025
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -39,19 +39,88 @@ volatile boolean_T runModel = true;
 extmodeErrorCode_T errorCode;
 px4_sem_t stopSem;
 px4_sem_t baserateTaskSem;
+px4_sem_t subrateTaskSem[2];
+int taskId[2];
 pthread_t schedulerThread;
 pthread_t baseRateThread;
 pthread_t backgroundThread;
 void *threadJoinStatus;
 int terminatingmodel = 0;
+pthread_t subRateThread[2];
+int subratePriority[2];
+extmodeSimulationTime_T getCurrentTaskTime(int tid)
+{
+  extmodeSimulationTime_T currentTime = 0;
+  switch (tid) {
+   case 1:
+    currentTime = (extmodeSimulationTime_T)
+      ((Quadcopter_ControllerWithNavigation_M->Timing.clockTick1) * 0.01);
+    break;
+
+   case 2:
+    currentTime = (extmodeSimulationTime_T)
+      ((Quadcopter_ControllerWithNavigation_M->Timing.clockTick2) * 0.015);
+    break;
+  }
+
+  return currentTime;
+}
+
+void *subrateTask(void *arg)
+{
+  int tid = *((int *) arg);
+  int subRateId;
+  subRateId = tid + 1;
+  while (runModel) {
+    px4_sem_wait(&subrateTaskSem[tid]);
+    if (terminatingmodel)
+      break;
+
+#ifdef MW_RTOS_DEBUG
+
+    printf(" -subrate task %d semaphore received\n", subRateId);
+
+#endif
+
+    extmodeSimulationTime_T currentTime = getCurrentTaskTime(subRateId);
+    Quadcopter_ControllerWithNavigation_step(subRateId);
+
+    // Get model outputs here
+
+    // Trigger External Mode event
+    extmodeEvent(subRateId, currentTime);
+  }
+
+  pthread_exit((void *)0);
+  return NULL;
+}
+
 void *baseRateTask(void *arg)
 {
+  int_T i;
   runModel = (rtmGetErrorStatus(Quadcopter_ControllerWithNavigation_M) == (NULL));
   while (runModel) {
     px4_sem_wait(&baserateTaskSem);
+
+#ifdef MW_RTOS_DEBUG
+
+    printf("*base rate task semaphore received\n");
+    fflush(stdout);
+
+#endif
+
+    for (i = 1
+         ; i <= 2; i++) {
+      if (rtmStepTask(Quadcopter_ControllerWithNavigation_M, i)
+          ) {
+        px4_sem_post(&subrateTaskSem[ i - 1
+                     ]);
+      }
+    }
+
     extmodeSimulationTime_T currentTime = (extmodeSimulationTime_T)
       Quadcopter_ControllerWithNavigation_M->Timing.taskTime0;
-    Quadcopter_ControllerWithNavigation_step();
+    Quadcopter_ControllerWithNavigation_step(0);
 
     // Get model outputs here
 
@@ -63,7 +132,6 @@ void *baseRateTask(void *arg)
       !extmodeStopRequested();
   }
 
-  runModel = 0;
   terminateTask(arg);
   pthread_exit((void *)0);
   return NULL;
@@ -82,6 +150,20 @@ void *terminateTask(void *arg)
   terminatingmodel = 1;
 
   {
+    int i;
+
+    // Signal all periodic tasks to complete
+    for (i=0; i<2; i++) {
+      CHECK_STATUS(px4_sem_post(&subrateTaskSem[i]), 0, "px4_sem_post");
+      CHECK_STATUS(px4_sem_destroy(&subrateTaskSem[i]), 0, "px4_sem_destroy");
+    }
+
+    // Wait for all periodic tasks to complete
+    for (i=0; i<2; i++) {
+      CHECK_STATUS(pthread_join(subRateThread[i], &threadJoinStatus), 0,
+                   "pthread_join");
+    }
+
     runModel = 0;
 
     // Wait for background task to complete
@@ -115,6 +197,8 @@ void *backgroundTask(void *arg)
 
 int px4_simulink_app_task_main (int argc, char *argv[])
 {
+  subratePriority[0] = 249;
+  subratePriority[1] = 248;
   px4_simulink_app_control_MAVLink();
   rtmSetErrorStatus(Quadcopter_ControllerWithNavigation_M, 0);
 
@@ -144,7 +228,7 @@ int px4_simulink_app_task_main (int argc, char *argv[])
   }
 
   // Call RTOS Initialization function
-  nuttxRTOSInit(0.01, 0);
+  nuttxRTOSInit(0.005, 2);
 
   // Wait for stop semaphore
   px4_sem_wait(&stopSem);

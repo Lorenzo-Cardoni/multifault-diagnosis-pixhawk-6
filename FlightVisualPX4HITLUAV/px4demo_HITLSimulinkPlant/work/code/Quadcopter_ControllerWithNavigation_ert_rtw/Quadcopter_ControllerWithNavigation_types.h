@@ -7,9 +7,9 @@
 //
 // Code generated for Simulink model 'Quadcopter_ControllerWithNavigation'.
 //
-// Model version                  : 4.12
+// Model version                  : 4.31
 // Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
-// C/C++ source code generated on : Fri Dec 13 15:25:49 2024
+// C/C++ source code generated on : Wed Feb  5 16:24:46 2025
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -29,6 +29,10 @@
 #include <uORB/topics/home_position.h>
 #include <uORB/topics/position_setpoint.h>
 #include <uORB/topics/position_setpoint_triplet.h>
+#include <uORB/topics/sensor_accel.h>
+#include <uORB/topics/vehicle_gps_position.h>
+#include <uORB/topics/sensor_gyro.h>
+#include <uORB/topics/sensor_mag.h>
 #ifndef struct_px4_internal_block_LLA2LocalCoordinatesNED_Quadcopter_Control_T
 #define struct_px4_internal_block_LLA2LocalCoordinatesNED_Quadcopter_Control_T
 

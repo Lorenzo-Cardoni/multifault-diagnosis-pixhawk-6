@@ -7,9 +7,9 @@
 //
 // Code generated for Simulink model 'Quadcopter_ControllerWithNavigation'.
 //
-// Model version                  : 4.12
+// Model version                  : 4.31
 // Simulink Coder version         : 23.2 (R2023b) 01-Aug-2023
-// C/C++ source code generated on : Fri Dec 13 15:25:49 2024
+// C/C++ source code generated on : Wed Feb  5 16:24:46 2025
 //
 // Target selection: ert.tlc
 // Embedded hardware selection: ARM Compatible->ARM Cortex
@@ -22,277 +22,277 @@
 P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   {
   // Mask Parameter: PIDController_D
-  //  Referenced by: '<S91>/Derivative Gain'
+  //  Referenced by: '<S105>/Derivative Gain'
 
   0.0,
 
   // Mask Parameter: PIDController1_D
-  //  Referenced by: '<S141>/Derivative Gain'
+  //  Referenced by: '<S155>/Derivative Gain'
 
   0.0025,
 
   // Mask Parameter: PIDController2_D
-  //  Referenced by: '<S191>/Derivative Gain'
+  //  Referenced by: '<S205>/Derivative Gain'
 
   0.0025,
 
   // Mask Parameter: PID_Altitude_D
-  //  Referenced by: '<S488>/Derivative Gain'
+  //  Referenced by: '<S518>/Derivative Gain'
 
   0.01,
 
   // Mask Parameter: PID_vz_D
-  //  Referenced by: '<S538>/Derivative Gain'
+  //  Referenced by: '<S568>/Derivative Gain'
 
   0.05,
 
   // Mask Parameter: PIDController_I
-  //  Referenced by: '<S94>/Integral Gain'
+  //  Referenced by: '<S108>/Integral Gain'
 
   0.0,
 
   // Mask Parameter: PIDController1_I
-  //  Referenced by: '<S144>/Integral Gain'
+  //  Referenced by: '<S158>/Integral Gain'
 
   0.0,
 
   // Mask Parameter: PIDController2_I
-  //  Referenced by: '<S194>/Integral Gain'
+  //  Referenced by: '<S208>/Integral Gain'
 
   0.0,
 
   // Mask Parameter: PID_Altitude_I
-  //  Referenced by: '<S491>/Integral Gain'
+  //  Referenced by: '<S521>/Integral Gain'
 
   0.01,
 
   // Mask Parameter: PID_vz_I
-  //  Referenced by: '<S541>/Integral Gain'
+  //  Referenced by: '<S571>/Integral Gain'
 
   0.1,
 
   // Mask Parameter: PIDController_InitialConditionForFilter
-  //  Referenced by: '<S92>/Filter'
+  //  Referenced by: '<S106>/Filter'
 
   0.0,
 
   // Mask Parameter: PIDController1_InitialConditionForFilter
-  //  Referenced by: '<S142>/Filter'
+  //  Referenced by: '<S156>/Filter'
 
   0.0,
 
   // Mask Parameter: PIDController2_InitialConditionForFilter
-  //  Referenced by: '<S192>/Filter'
+  //  Referenced by: '<S206>/Filter'
 
   0.0,
 
   // Mask Parameter: PID_Altitude_InitialConditionForFilter
-  //  Referenced by: '<S489>/Filter'
+  //  Referenced by: '<S519>/Filter'
 
   0.0,
 
   // Mask Parameter: PID_vz_InitialConditionForFilter
-  //  Referenced by: '<S539>/Filter'
+  //  Referenced by: '<S569>/Filter'
 
   0.0,
 
   // Mask Parameter: PIDController_InitialConditionForIntegrator
-  //  Referenced by: '<S97>/Integrator'
+  //  Referenced by: '<S111>/Integrator'
 
   0.0,
 
   // Mask Parameter: PIDController1_InitialConditionForIntegrator
-  //  Referenced by: '<S147>/Integrator'
+  //  Referenced by: '<S161>/Integrator'
 
   0.0,
 
   // Mask Parameter: PIDController2_InitialConditionForIntegrator
-  //  Referenced by: '<S197>/Integrator'
+  //  Referenced by: '<S211>/Integrator'
 
   0.0,
 
   // Mask Parameter: PID_Altitude_InitialConditionForIntegrator
-  //  Referenced by: '<S494>/Integrator'
+  //  Referenced by: '<S524>/Integrator'
 
   0.0,
 
   // Mask Parameter: PID_vz_InitialConditionForIntegrator
-  //  Referenced by: '<S544>/Integrator'
+  //  Referenced by: '<S574>/Integrator'
 
   0.0,
 
   // Mask Parameter: PIDController5_LowerSaturationLimit
-  //  Referenced by: '<S348>/Saturation'
+  //  Referenced by: '<S362>/Saturation'
 
   -0.87266462599716477,
 
   // Mask Parameter: PIDController_LowerSaturationLimit
   //  Referenced by:
-  //    '<S104>/Saturation'
-  //    '<S90>/DeadZone'
+  //    '<S118>/Saturation'
+  //    '<S104>/DeadZone'
 
   -0.1,
 
   // Mask Parameter: PIDController1_LowerSaturationLimit
   //  Referenced by:
-  //    '<S154>/Saturation'
-  //    '<S140>/DeadZone'
+  //    '<S168>/Saturation'
+  //    '<S154>/DeadZone'
 
   -0.2,
 
   // Mask Parameter: PIDController2_LowerSaturationLimit
   //  Referenced by:
-  //    '<S204>/Saturation'
-  //    '<S190>/DeadZone'
+  //    '<S218>/Saturation'
+  //    '<S204>/DeadZone'
 
   -0.2,
 
   // Mask Parameter: PID_Altitude_LowerSaturationLimit
   //  Referenced by:
-  //    '<S501>/Saturation'
-  //    '<S487>/DeadZone'
+  //    '<S531>/Saturation'
+  //    '<S517>/DeadZone'
 
   -2.0,
 
   // Mask Parameter: PID_vz_LowerSaturationLimit
   //  Referenced by:
-  //    '<S551>/Saturation'
-  //    '<S537>/DeadZone'
+  //    '<S581>/Saturation'
+  //    '<S567>/DeadZone'
 
   0.0,
 
   // Mask Parameter: PIDController1_LowerSaturationLimit_j
-  //  Referenced by: '<S451>/Saturation'
+  //  Referenced by: '<S481>/Saturation'
 
   -4.0,
 
   // Mask Parameter: PIDController_LowerSaturationLimit_f
-  //  Referenced by: '<S403>/Saturation'
+  //  Referenced by: '<S433>/Saturation'
 
   -0.3490658503988659,
 
   // Mask Parameter: PIDController_N
-  //  Referenced by: '<S100>/Filter Coefficient'
+  //  Referenced by: '<S114>/Filter Coefficient'
 
   100.0,
 
   // Mask Parameter: PIDController1_N
-  //  Referenced by: '<S150>/Filter Coefficient'
+  //  Referenced by: '<S164>/Filter Coefficient'
 
   50.0,
 
   // Mask Parameter: PIDController2_N
-  //  Referenced by: '<S200>/Filter Coefficient'
+  //  Referenced by: '<S214>/Filter Coefficient'
 
   50.0,
 
   // Mask Parameter: PID_Altitude_N
-  //  Referenced by: '<S497>/Filter Coefficient'
+  //  Referenced by: '<S527>/Filter Coefficient'
 
   10.0,
 
   // Mask Parameter: PID_vz_N
-  //  Referenced by: '<S547>/Filter Coefficient'
+  //  Referenced by: '<S577>/Filter Coefficient'
 
   10.0,
 
   // Mask Parameter: PIDController5_P
-  //  Referenced by: '<S346>/Proportional Gain'
+  //  Referenced by: '<S360>/Proportional Gain'
 
   2.0,
 
   // Mask Parameter: PIDController_P
-  //  Referenced by: '<S102>/Proportional Gain'
+  //  Referenced by: '<S116>/Proportional Gain'
 
   0.2,
 
   // Mask Parameter: PIDController3_P
-  //  Referenced by: '<S250>/Proportional Gain'
+  //  Referenced by: '<S264>/Proportional Gain'
 
   4.0,
 
   // Mask Parameter: PIDController1_P
-  //  Referenced by: '<S152>/Proportional Gain'
+  //  Referenced by: '<S166>/Proportional Gain'
 
   0.035,
 
   // Mask Parameter: PIDController4_P
-  //  Referenced by: '<S298>/Proportional Gain'
+  //  Referenced by: '<S312>/Proportional Gain'
 
   4.0,
 
   // Mask Parameter: PIDController2_P
-  //  Referenced by: '<S202>/Proportional Gain'
+  //  Referenced by: '<S216>/Proportional Gain'
 
   0.035,
 
   // Mask Parameter: PID_Altitude_P
-  //  Referenced by: '<S499>/Proportional Gain'
+  //  Referenced by: '<S529>/Proportional Gain'
 
   1.5,
 
   // Mask Parameter: PID_vz_P
-  //  Referenced by: '<S549>/Proportional Gain'
+  //  Referenced by: '<S579>/Proportional Gain'
 
   0.5,
 
   // Mask Parameter: PIDController1_P_f
-  //  Referenced by: '<S449>/Proportional Gain'
+  //  Referenced by: '<S479>/Proportional Gain'
 
   0.6,
 
   // Mask Parameter: PIDController_P_n
-  //  Referenced by: '<S401>/Proportional Gain'
+  //  Referenced by: '<S431>/Proportional Gain'
 
   0.3,
 
   // Mask Parameter: PIDController5_UpperSaturationLimit
-  //  Referenced by: '<S348>/Saturation'
+  //  Referenced by: '<S362>/Saturation'
 
   0.87266462599716477,
 
   // Mask Parameter: PIDController_UpperSaturationLimit
   //  Referenced by:
-  //    '<S104>/Saturation'
-  //    '<S90>/DeadZone'
+  //    '<S118>/Saturation'
+  //    '<S104>/DeadZone'
 
   0.1,
 
   // Mask Parameter: PIDController1_UpperSaturationLimit
   //  Referenced by:
-  //    '<S154>/Saturation'
-  //    '<S140>/DeadZone'
+  //    '<S168>/Saturation'
+  //    '<S154>/DeadZone'
 
   0.2,
 
   // Mask Parameter: PIDController2_UpperSaturationLimit
   //  Referenced by:
-  //    '<S204>/Saturation'
-  //    '<S190>/DeadZone'
+  //    '<S218>/Saturation'
+  //    '<S204>/DeadZone'
 
   0.2,
 
   // Mask Parameter: PID_Altitude_UpperSaturationLimit
   //  Referenced by:
-  //    '<S501>/Saturation'
-  //    '<S487>/DeadZone'
+  //    '<S531>/Saturation'
+  //    '<S517>/DeadZone'
 
   2.0,
 
   // Mask Parameter: PID_vz_UpperSaturationLimit
   //  Referenced by:
-  //    '<S551>/Saturation'
-  //    '<S537>/DeadZone'
+  //    '<S581>/Saturation'
+  //    '<S567>/DeadZone'
 
   1.0,
 
   // Mask Parameter: PIDController1_UpperSaturationLimit_h
-  //  Referenced by: '<S451>/Saturation'
+  //  Referenced by: '<S481>/Saturation'
 
   4.0,
 
   // Mask Parameter: PIDController_UpperSaturationLimit_i
-  //  Referenced by: '<S403>/Saturation'
+  //  Referenced by: '<S433>/Saturation'
 
   0.3490658503988659,
 
@@ -1075,6 +1075,80 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
     // _padding0
   },
 
+  // Computed Parameter: Out1_Y0_j
+  //  Referenced by: '<S383>/Out1'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // time_utc_usec
+    0,                                 // lat
+    0,                                 // lon
+    0,                                 // alt
+    0,                                 // alt_ellipsoid
+    0.0F,                              // s_variance_m_s
+    0.0F,                              // c_variance_rad
+    0.0F,                              // eph
+    0.0F,                              // epv
+    0.0F,                              // hdop
+    0.0F,                              // vdop
+    0,                                 // noise_per_ms
+    0,                                 // jamming_indicator
+    0.0F,                              // vel_m_s
+    0.0F,                              // vel_n_m_s
+    0.0F,                              // vel_e_m_s
+    0.0F,                              // vel_d_m_s
+    0.0F,                              // cog_rad
+    0,                                 // timestamp_time_relative
+    0.0F,                              // heading
+    0.0F,                              // heading_offset
+    0U,                                // fix_type
+    0U,                                // jamming_state
+    false,                             // vel_ned_valid
+    0U,                                // satellites_used
+    0U,                                // selected
+
+    {
+      0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Constant_Value_j
+  //  Referenced by: '<S382>/Constant'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // time_utc_usec
+    0,                                 // lat
+    0,                                 // lon
+    0,                                 // alt
+    0,                                 // alt_ellipsoid
+    0.0F,                              // s_variance_m_s
+    0.0F,                              // c_variance_rad
+    0.0F,                              // eph
+    0.0F,                              // epv
+    0.0F,                              // hdop
+    0.0F,                              // vdop
+    0,                                 // noise_per_ms
+    0,                                 // jamming_indicator
+    0.0F,                              // vel_m_s
+    0.0F,                              // vel_n_m_s
+    0.0F,                              // vel_e_m_s
+    0.0F,                              // vel_d_m_s
+    0.0F,                              // cog_rad
+    0,                                 // timestamp_time_relative
+    0.0F,                              // heading
+    0.0F,                              // heading_offset
+    0U,                                // fix_type
+    0U,                                // jamming_state
+    false,                             // vel_ned_valid
+    0U,                                // satellites_used
+    0U,                                // selected
+
+    {
+      0U, 0U, 0U }
+    // _padding0
+  },
+
   // Computed Parameter: Out1_Y0_k
   //  Referenced by: '<S12>/Out1'
 
@@ -1153,6 +1227,128 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
     false                              // manual_home
   },
 
+  // Computed Parameter: Out1_Y0_g
+  //  Referenced by: '<S70>/Out1'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+
+    {
+      0U, 0U, 0U }
+    ,                                  // clip_counter
+    0U,                                // samples
+
+    {
+      0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Constant_Value_c
+  //  Referenced by: '<S69>/Constant'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+
+    {
+      0U, 0U, 0U }
+    ,                                  // clip_counter
+    0U,                                // samples
+
+    {
+      0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Out1_Y0_eg
+  //  Referenced by: '<S385>/Out1'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+    0U,                                // samples
+
+    {
+      0U, 0U, 0U, 0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Constant_Value_e5
+  //  Referenced by: '<S384>/Constant'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+    0U,                                // samples
+
+    {
+      0U, 0U, 0U, 0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Out1_Y0_m
+  //  Referenced by: '<S387>/Out1'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+    false,                             // is_external
+
+    {
+      0U, 0U, 0U, 0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
+  // Computed Parameter: Constant_Value_na
+  //  Referenced by: '<S386>/Constant'
+
+  {
+    (0ULL),                            // timestamp
+    (0ULL),                            // timestamp_sample
+    0U,                                // device_id
+    0.0F,                              // x
+    0.0F,                              // y
+    0.0F,                              // z
+    0.0F,                              // temperature
+    0U,                                // error_count
+    false,                             // is_external
+
+    {
+      0U, 0U, 0U, 0U, 0U, 0U, 0U }
+    // _padding0
+  },
+
   // Computed Parameter: Out1_Y0_d
   //  Referenced by: '<S11>/Out1'
 
@@ -1168,7 +1364,7 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
     false                              // soft_stop
   },
 
-  // Computed Parameter: Constant_Value_j
+  // Computed Parameter: Constant_Value_jl
   //  Referenced by: '<S7>/Constant'
 
   {
@@ -1314,234 +1510,240 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   -1.0,
 
   // Expression: 0
-  //  Referenced by: '<S57>/Switch1'
+  //  Referenced by: '<S71>/Switch1'
 
   0.0,
 
   // Computed Parameter: tau_Yaw_Y0
-  //  Referenced by: '<S53>/tau_Yaw'
+  //  Referenced by: '<S54>/tau_Yaw'
 
   0.0,
 
   // Computed Parameter: tau_Pitch_Y0
-  //  Referenced by: '<S53>/tau_Pitch'
+  //  Referenced by: '<S54>/tau_Pitch'
 
   0.0,
 
   // Computed Parameter: tau_Roll_Y0
-  //  Referenced by: '<S53>/tau_Roll'
+  //  Referenced by: '<S54>/tau_Roll'
 
   0.0,
 
   // Expression: 0
-  //  Referenced by: '<S88>/Constant1'
+  //  Referenced by: '<S102>/Constant1'
 
   0.0,
 
   // Expression: 0
-  //  Referenced by: '<S138>/Constant1'
+  //  Referenced by: '<S152>/Constant1'
 
   0.0,
 
   // Expression: 0
-  //  Referenced by: '<S188>/Constant1'
+  //  Referenced by: '<S202>/Constant1'
 
   0.0,
 
   // Expression: 2*pi
-  //  Referenced by: '<S57>/Constant'
+  //  Referenced by: '<S71>/Constant'
 
   6.2831853071795862,
 
   // Expression: pi
-  //  Referenced by: '<S57>/Switch'
+  //  Referenced by: '<S71>/Switch'
 
   3.1415926535897931,
 
   // Computed Parameter: Integrator_gainval
-  //  Referenced by: '<S97>/Integrator'
+  //  Referenced by: '<S111>/Integrator'
 
   0.01,
 
   // Computed Parameter: Filter_gainval
-  //  Referenced by: '<S92>/Filter'
+  //  Referenced by: '<S106>/Filter'
 
   0.01,
 
   // Expression: 0
-  //  Referenced by: '<S88>/Clamping_zero'
+  //  Referenced by: '<S102>/Clamping_zero'
 
   0.0,
 
   // Expression: 40*pi/180
-  //  Referenced by: '<S53>/Rate Limiter2'
+  //  Referenced by: '<S54>/Rate Limiter2'
 
   0.69813170079773179,
 
   // Expression: -40*pi/180
-  //  Referenced by: '<S53>/Rate Limiter2'
+  //  Referenced by: '<S54>/Rate Limiter2'
 
   -0.69813170079773179,
 
   // Expression: 0
-  //  Referenced by: '<S53>/Rate Limiter2'
+  //  Referenced by: '<S54>/Rate Limiter2'
 
   0.0,
 
   // Expression: 20*pi/180
-  //  Referenced by: '<S53>/Saturation1'
+  //  Referenced by: '<S54>/Saturation1'
 
   0.3490658503988659,
 
   // Expression: -20*pi/180
-  //  Referenced by: '<S53>/Saturation1'
+  //  Referenced by: '<S54>/Saturation1'
 
   -0.3490658503988659,
 
   // Expression: 0
-  //  Referenced by: '<S138>/Clamping_zero'
+  //  Referenced by: '<S152>/Clamping_zero'
 
   0.0,
 
   // Computed Parameter: Integrator_gainval_k
-  //  Referenced by: '<S147>/Integrator'
+  //  Referenced by: '<S161>/Integrator'
 
   0.01,
 
   // Computed Parameter: Filter_gainval_p
-  //  Referenced by: '<S142>/Filter'
+  //  Referenced by: '<S156>/Filter'
 
   0.01,
 
   // Expression: 40*pi/180
-  //  Referenced by: '<S53>/Rate Limiter1'
+  //  Referenced by: '<S54>/Rate Limiter1'
 
   0.69813170079773179,
 
   // Expression: -40*pi/180
-  //  Referenced by: '<S53>/Rate Limiter1'
+  //  Referenced by: '<S54>/Rate Limiter1'
 
   -0.69813170079773179,
 
   // Expression: 0
-  //  Referenced by: '<S53>/Rate Limiter1'
+  //  Referenced by: '<S54>/Rate Limiter1'
 
   0.0,
 
   // Expression: 20*pi/180
-  //  Referenced by: '<S53>/Saturation'
+  //  Referenced by: '<S54>/Saturation'
 
   0.3490658503988659,
 
   // Expression: -20*pi/180
-  //  Referenced by: '<S53>/Saturation'
+  //  Referenced by: '<S54>/Saturation'
 
   -0.3490658503988659,
 
   // Expression: 0
-  //  Referenced by: '<S188>/Clamping_zero'
+  //  Referenced by: '<S202>/Clamping_zero'
 
   0.0,
 
   // Computed Parameter: Integrator_gainval_i
-  //  Referenced by: '<S197>/Integrator'
+  //  Referenced by: '<S211>/Integrator'
 
   0.01,
 
   // Computed Parameter: Filter_gainval_h
-  //  Referenced by: '<S192>/Filter'
+  //  Referenced by: '<S206>/Filter'
 
   0.01,
 
   // Expression: 0
-  //  Referenced by: '<S358>/Constant'
+  //  Referenced by: '<S388>/Constant'
 
   0.0,
 
   // Computed Parameter: tau_Thrust_Y0
-  //  Referenced by: '<S54>/tau_Thrust'
+  //  Referenced by: '<S66>/tau_Thrust'
 
   0.0,
 
   // Computed Parameter: des_pitch_Y0
-  //  Referenced by: '<S54>/des_pitch'
+  //  Referenced by: '<S66>/des_pitch'
 
   0.0,
 
   // Computed Parameter: des_roll_Y0
-  //  Referenced by: '<S54>/des_roll'
+  //  Referenced by: '<S66>/des_roll'
 
   0.0,
 
   // Expression: 0
-  //  Referenced by: '<S485>/Constant1'
+  //  Referenced by: '<S515>/Constant1'
 
   0.0,
 
   // Expression: 0
-  //  Referenced by: '<S535>/Constant1'
+  //  Referenced by: '<S565>/Constant1'
 
   0.0,
 
   // Expression: -1
-  //  Referenced by: '<S358>/Gain1'
+  //  Referenced by: '<S388>/Gain1'
 
   -1.0,
 
   // Expression: 0
-  //  Referenced by: '<S485>/Clamping_zero'
+  //  Referenced by: '<S515>/Clamping_zero'
 
   0.0,
 
   // Computed Parameter: Filter_gainval_g
-  //  Referenced by: '<S489>/Filter'
+  //  Referenced by: '<S519>/Filter'
 
   0.01,
 
   // Computed Parameter: Integrator_gainval_a
-  //  Referenced by: '<S494>/Integrator'
+  //  Referenced by: '<S524>/Integrator'
 
   0.01,
 
   // Expression: 0
-  //  Referenced by: '<S535>/Clamping_zero'
+  //  Referenced by: '<S565>/Clamping_zero'
 
   0.0,
 
   // Computed Parameter: Filter_gainval_k
-  //  Referenced by: '<S539>/Filter'
+  //  Referenced by: '<S569>/Filter'
 
   0.01,
 
   // Computed Parameter: Integrator_gainval_g
-  //  Referenced by: '<S544>/Integrator'
+  //  Referenced by: '<S574>/Integrator'
 
   0.01,
 
   // Expression: -1
-  //  Referenced by: '<S359>/Gain'
+  //  Referenced by: '<S389>/Gain'
 
   -1.0,
 
   // Expression: -1
-  //  Referenced by: '<S54>/Gain1'
+  //  Referenced by: '<S66>/Gain1'
 
   -1.0,
 
   // Expression: [1 0 0 0]
-  //  Referenced by: '<S55>/Constant'
+  //  Referenced by: '<S67>/Constant'
 
   { 1.0, 0.0, 0.0, 0.0 },
 
   // Expression: 1
-  //  Referenced by: '<S565>/Constant'
+  //  Referenced by: '<S595>/Constant'
 
   1.0,
 
   // Expression: 1
-  //  Referenced by: '<S566>/Constant'
+  //  Referenced by: '<S596>/Constant'
 
   1.0,
+
+  // Expression: [1 1 -1 1;1 -1 1 1;1 1 1 -1;1 -1 -1 -1]
+  //  Referenced by: '<S5>/Mixer matrix'
+
+  { 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
+    -1.0, -1.0 },
 
   // Expression: -1
   //  Referenced by: '<S52>/Gain'
@@ -1549,15 +1751,9 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   -1.0,
 
   // Expression: 0
-  //  Referenced by: '<S55>/Switch'
+  //  Referenced by: '<S67>/Switch'
 
   0.0,
-
-  // Expression: [1 1 -1 1;1 -1 1 1;1 1 1 -1;1 -1 -1 -1]
-  //  Referenced by: '<S5>/Mixer matrix'
-
-  { 1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
-    -1.0, -1.0 },
 
   // Expression: 1
   //  Referenced by: '<S5>/Bias'
@@ -1568,6 +1764,101 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   //  Referenced by: '<S5>/Gain1'
 
   1000.0,
+
+  // Expression: zeros(130,1)
+  //  Referenced by: '<S55>/Delay1'
+
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  // Expression: 130
+  //  Referenced by: '<S52>/Constant'
+
+  130.0,
+
+  // Expression: 1
+  //  Referenced by: '<S55>/Delay'
+
+  1.0,
+
+  // Expression: zeros(130,1)
+  //  Referenced by: '<S56>/Delay1'
+
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  // Expression: 1
+  //  Referenced by: '<S56>/Delay'
+
+  1.0,
+
+  // Expression: zeros(130,1)
+  //  Referenced by: '<S57>/Delay1'
+
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  // Expression: 1
+  //  Referenced by: '<S57>/Delay'
+
+  1.0,
+
+  // Expression: zeros(130,1)
+  //  Referenced by: '<S58>/Delay1'
+
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  // Expression: 1
+  //  Referenced by: '<S58>/Delay'
+
+  1.0,
+
+  // Expression: zeros(130,1)
+  //  Referenced by: '<S59>/Delay1'
+
+  { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+    0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+
+  // Expression: 1
+  //  Referenced by: '<S59>/Delay'
+
+  1.0,
 
   // Computed Parameter: Constant7_Value
   //  Referenced by: '<S42>/Constant7'
@@ -1609,11 +1900,6 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
 
   { 0.0F, 0.0F, 0.0F },
 
-  // Computed Parameter: Constant2_Value
-  //  Referenced by: '<S42>/Constant2'
-
-  { 0.0F, 0.0F, 0.0F },
-
   // Computed Parameter: Constant3_Value
   //  Referenced by: '<S42>/Constant3'
 
@@ -1623,6 +1909,11 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   //  Referenced by: '<S42>/Constant4'
 
   0.0F,
+
+  // Computed Parameter: Constant2_Value
+  //  Referenced by: '<S42>/Constant2'
+
+  { 0.0F, 0.0F, 0.0F },
 
   // Computed Parameter: Saturation_UpperSat_g
   //  Referenced by: '<S5>/Saturation'
@@ -1665,102 +1956,102 @@ P_Quadcopter_ControllerWithNavigation_T Quadcopter_ControllerWithNavigation_P =
   false,
 
   // Computed Parameter: Constant_Value_k
-  //  Referenced by: '<S88>/Constant'
+  //  Referenced by: '<S102>/Constant'
 
   1,
 
   // Computed Parameter: Constant2_Value_e
-  //  Referenced by: '<S88>/Constant2'
+  //  Referenced by: '<S102>/Constant2'
 
   -1,
 
   // Computed Parameter: Constant3_Value_g
-  //  Referenced by: '<S88>/Constant3'
+  //  Referenced by: '<S102>/Constant3'
 
   1,
 
   // Computed Parameter: Constant4_Value_j
-  //  Referenced by: '<S88>/Constant4'
+  //  Referenced by: '<S102>/Constant4'
 
   -1,
 
   // Computed Parameter: Constant_Value_h
-  //  Referenced by: '<S138>/Constant'
+  //  Referenced by: '<S152>/Constant'
 
   1,
 
   // Computed Parameter: Constant2_Value_f
-  //  Referenced by: '<S138>/Constant2'
+  //  Referenced by: '<S152>/Constant2'
 
   -1,
 
   // Computed Parameter: Constant3_Value_c
-  //  Referenced by: '<S138>/Constant3'
+  //  Referenced by: '<S152>/Constant3'
 
   1,
 
   // Computed Parameter: Constant4_Value_e
-  //  Referenced by: '<S138>/Constant4'
+  //  Referenced by: '<S152>/Constant4'
 
   -1,
 
   // Computed Parameter: Constant_Value_is
-  //  Referenced by: '<S188>/Constant'
+  //  Referenced by: '<S202>/Constant'
 
   1,
 
   // Computed Parameter: Constant2_Value_a
-  //  Referenced by: '<S188>/Constant2'
+  //  Referenced by: '<S202>/Constant2'
 
   -1,
 
   // Computed Parameter: Constant3_Value_b
-  //  Referenced by: '<S188>/Constant3'
+  //  Referenced by: '<S202>/Constant3'
 
   1,
 
   // Computed Parameter: Constant4_Value_k
-  //  Referenced by: '<S188>/Constant4'
+  //  Referenced by: '<S202>/Constant4'
 
   -1,
 
   // Computed Parameter: Constant_Value_hk
-  //  Referenced by: '<S485>/Constant'
+  //  Referenced by: '<S515>/Constant'
 
   1,
 
   // Computed Parameter: Constant2_Value_l
-  //  Referenced by: '<S485>/Constant2'
+  //  Referenced by: '<S515>/Constant2'
 
   -1,
 
   // Computed Parameter: Constant3_Value_gn
-  //  Referenced by: '<S485>/Constant3'
+  //  Referenced by: '<S515>/Constant3'
 
   1,
 
   // Computed Parameter: Constant4_Value_g
-  //  Referenced by: '<S485>/Constant4'
+  //  Referenced by: '<S515>/Constant4'
 
   -1,
 
   // Computed Parameter: Constant_Value_mp
-  //  Referenced by: '<S535>/Constant'
+  //  Referenced by: '<S565>/Constant'
 
   1,
 
   // Computed Parameter: Constant2_Value_k
-  //  Referenced by: '<S535>/Constant2'
+  //  Referenced by: '<S565>/Constant2'
 
   -1,
 
   // Computed Parameter: Constant3_Value_i
-  //  Referenced by: '<S535>/Constant3'
+  //  Referenced by: '<S565>/Constant3'
 
   1,
 
   // Computed Parameter: Constant4_Value_ja
-  //  Referenced by: '<S535>/Constant4'
+  //  Referenced by: '<S565>/Constant4'
 
   -1,
 
