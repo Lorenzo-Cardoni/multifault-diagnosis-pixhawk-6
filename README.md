@@ -3,8 +3,9 @@
 Questo repository contiene il codice e i modelli sviluppati per la **diagnosi dei guasti negli UAV (Unmanned Aerial Vehicles)** mediante tecniche di **Machine Learning**. Il progetto prevede l'implementazione e l'analisi di moduli diagnostici sia su un **calcolatore di bordo** (simulazione) che su un **flight controller reale (Pixhawk)**.
 
 ## 📌 Caratteristiche principali
-- **Modelli di Machine Learning** per rilevare guasti nei sensori e negli attuatori degli UAV.
 - **Simulazione MATLAB & Simulink** per testare gli algoritmi diagnostici prima dell'implementazione reale.
+- **Implementazione di moduli di Fault Injection** per la simulazione di guasti nei sensori e attuatori.
+- **Modelli di Machine Learning** per rilevare guasti nei sensori e negli attuatori degli UAV.
 - **Integrazione su Flight Controller (Pixhawk)** con ottimizzazione per dispositivi embedded.
 - **Analisi delle prestazioni** con confronto tra esecuzione su calcolatore e su hardware reale.
 
@@ -32,7 +33,7 @@ Compilare e caricare il firmware modificato in firmware/ sulla Pixhawk.
 Collegare il flight controller a QGroundControl per la configurazione.
 Avviare i test in volo monitorando i risultati diagnostici.
 ### 📊 Risultati e Analisi
-I risultati dell'implementazione sono disponibili nella cartella docs/, con report sulle prestazioni del sistema diagnostico sia in simulazione che su hardware reale.
+I risultati dell'implementazione e della validazione del modulo di Fault Injection sono disponibili nel file *Tesi_Cardoni_Lorenzo.pdf*.
 
 ### 🔥 Possibili sviluppi futuri
 Miglioramento degli algoritmi di Machine Learning per una maggiore accuratezza diagnostica.
