@@ -26,12 +26,9 @@ Questo repository contiene il codice e i modelli sviluppati per la **diagnosi de
 ## 📖 Istruzioni per l'uso
 ###  Installazione dei requisiti
 ### 1️⃣ Simulazione su MATLAB & Simulink
-Aprire il file simulink/diagnosi_uav.slx in MATLAB e avviare la simulazione.
 
 ### 2️⃣ Implementazione su Pixhawk
-Compilare e caricare il firmware modificato in firmware/ sulla Pixhawk.
-Collegare il flight controller a QGroundControl per la configurazione.
-Avviare i test in volo monitorando i risultati diagnostici.
+
 ### 📊 Risultati e Analisi
 I risultati dell'implementazione e della validazione del modulo di Fault Injection sono disponibili nel file *Tesi_Cardoni_Lorenzo.pdf*.
 
