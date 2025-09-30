@@ -1,5 +1,7 @@
 # Hardware-In-The-Loop approach for fault simulation and validation of diagnostic modules in Unmanned Aerial Vehicles
 
+!logo_faultInjection_Matlab.png
+
 Questo repository contiene il codice e i modelli sviluppati per la **diagnosi dei guasti negli UAV (Unmanned Aerial Vehicles)** mediante tecniche di **Machine Learning**. Il progetto prevede l'implementazione e l'analisi di moduli diagnostici sia su un **calcolatore di bordo** (simulazione) che su un **flight controller reale (Pixhawk)**.
 
 ## Caratteristiche principali
@@ -10,6 +12,28 @@ Questo repository contiene il codice e i modelli sviluppati per la **diagnosi de
 - **Analisi delle prestazioni** con confronto tra esecuzione su calcolatore e su hardware reale.
 
 ## Struttura del repository
+- **ClassificationLearner/**:
+Contiene i risultati ottenuti tramite Classification Learner per l’addestramento dei modelli di classificazione dei guasti, utilizzati nella diagnosi.
+- **DFD/**:
+Include gli output del Diagnostic Feature Designer, relativi all’estrazione delle feature dai dati grezzi.
+- **ETL/**:
+Script e file utilizzati nella fase di Extract, Transform, Load (ETL) dei dataset.
+- **FlightVisualPX4HITLUAV/**:
+Firmware PX4 per il sistema UAV HITL (Hardware-In-The-Loop).
+- **TreeModel/**:
+Modello di classificazione ad albero basato su dati PX4.
+- **mission_plan/**:
+File di missione per il software QGroundControl, utilizzati per la pianificazione dei voli.
+- **Simulazione Guasti.mlx**:
+Script MATLAB contenente il modello matematico per la simulazione dei guasti.
+- **tesi_cardoni_lorenzo.pdf**:
+Documento della tesi di progetto.
+- **logo_faultInjection_Matlab.png**:
+Logo del progetto, relativo al toolbox di iniezione guasti in MATLAB.
+- **plot3xyz.m**:
+Script MATLAB per la visualizzazione 3D della traiettoria di volo.
+- **plot_fault.m**:
+Script MATLAB per la visualizzazione dei guasti rilevati.
 
 
 
