@@ -1,6 +1,9 @@
 # Hardware-In-The-Loop approach for fault simulation and validation of diagnostic modules in Unmanned Aerial Vehicles
 
-!logo_faultInjection_Matlab.png
+<div align="center">
+  <img src="https://github.com/Lorenzo-Cardoni/multifault-diagnosis-pixhawk-6/blob/main/logo_faultInjection_Matlab.png">
+</div>
+
 
 Questo repository contiene il codice e i modelli sviluppati per la **diagnosi dei guasti negli UAV (Unmanned Aerial Vehicles)** mediante tecniche di **Machine Learning**. Il progetto prevede l'implementazione e l'analisi di moduli diagnostici sia su un **calcolatore di bordo** (simulazione) che su un **flight controller reale (Pixhawk)**.
 
